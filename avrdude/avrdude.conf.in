@@ -352,6 +352,18 @@ programmer
   type  = "arduino";
   connection_type = serial;
 ;
+
+# NOTE: The reset pin number is with respect to the CPU, not 
+# the number on the P1 header!
+# Check http://elinux.org/RPi_BCM2835_GPIOs for GPIO pin numbers.
+programmer
+  id    = "raspi_serial";
+  desc  = "Serial programming over Raspberry Pi's GPIO pins";
+  type  = raspi_serial;
+  connection_type = serial;
+  reset = 4;
+;
+
 # this will interface with the chips on these programmers:
 #
 # http://real.kiev.ua/old/avreal/en/adapters

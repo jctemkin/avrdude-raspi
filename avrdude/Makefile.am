@@ -142,6 +142,8 @@ libavrdude_a_SOURCES = \
 	ppi.c \
 	ppi.h \
 	ppiwin.c \
+	raspi_serial.c \
+	raspi_serial.h \
 	safemode.c \
 	safemode.h \
 	serial.h \
