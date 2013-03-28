@@ -359,7 +359,7 @@ programmer
 programmer
   id    = "raspi_serial";
   desc  = "Serial programming over Raspberry Pi's GPIO pins";
-  type  = raspi_serial;
+  type  = "raspi_serial";
   connection_type = serial;
   reset = 4;
 ;
